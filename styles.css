@@ -1,0 +1,64 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: #f4f4f4;
+}
+
+.book-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
+  padding: 16px;
+  max-width: 1200px;
+}
+
+.book-box {
+  background: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  text-align: center;
+  padding: 15px;
+}
+
+.image img {
+  width: 100%;
+}
+
+.info {
+  padding: 16px;
+}
+
+.info a {
+  font-size: 18px;
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.info a:hover {
+  color: #007BFF;
+}
+
+.info p {
+  font-size: 14px;
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .book-container {
+    grid-template-columns: 1fr;
+    gap: 12px;
+  }
+
+  .info a {
+    font-size: 16px;
+  }
+
+  .info p {
+    font-size: 12px;
+  }
+}
